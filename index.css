@@ -8,6 +8,7 @@
 /* body{
     background-color: rgb(156, 146, 146);
 } */
+
 .menu{
     font-family: "Roboto", sans-serif;
     font-weight: 500;
@@ -110,7 +111,7 @@ button:hover{
 .container-about{
     display: flex;
 	width: 80%;
-	height: 330px;
+	height: 390px;
 	background-color: #FFFFFF;
 	border-radius: 20px;
 	box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
@@ -134,6 +135,7 @@ button:hover{
     flex: 40%;
     margin: 5px 10px;
     padding: 0px 0px 10px 0px;
+	margin-top: 2rem;
 }
 
 .left-about h1{
@@ -373,4 +375,74 @@ button:hover{
 }
 .contact-input button:hover{
     background-color: rgb(150, 218, 218) ;
+}
+.container{
+    max-width:1152px;
+    padding:0 0px;
+    margin:0 auto;
+}
+
+@media (min-width: 576px){
+    .container{
+        max-width: 540px;
+    }
+}
+@media (min-width: 768px){
+    .container{
+        max-width: 720px;
+    }
+}
+@media (min-width: 992px){
+    .container{
+        max-width: 960px;
+    }
+}
+@media (min-width: 1200px){
+    .container{
+        max-width: 1366px;
+    }
+}
+@media only screen and (max-width:768px){
+	
+	.container {
+		max-width: 1152px;
+		padding: 0px 0px;
+		margin: 0 auto;
+	}
+	body{
+		width: 950px;
+		padding: 0;
+		margin: 0;
+	}
+	#main{
+		align-items: center;
+		flex-direction: column;
+	}
+	.right-main a{
+		margin-left: 12rem;
+		margin-top: 1rem;
+	}
+	.container-about{
+		flex-direction: column;
+		margin-top: 8rem;
+		width: 100%;
+		height: 30rem;
+		margin-bottom: 4rem;
+	}
+	.right-about{
+		margin-top: 5rem;
+
+	}
+	.h-box-container{
+		flex-direction: column;
+		width: 100%;
+	}
+	.handle-box {
+		width:550px;
+		height: 450px;
+		
+	}
+	.container{
+		height: 5313px;
+	}
 }
